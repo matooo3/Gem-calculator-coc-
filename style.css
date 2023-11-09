@@ -3,6 +3,11 @@
     padding: 0;*/
 }
 
+@keyframes colorShadow{
+    from {box-shadow: 3px 3px 16px rgb(253, 135, 135)}
+    to {box-shadow: 0px 0px 16px rgb(250, 33, 33)}
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -18,11 +23,14 @@ body {
 .input-container {
     display: flex;
     flex-direction: column;
-    
 }
 
 input , button{
     background-color: #504f4f;
+    caret-color: red;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
     margin: 0.7rem;
     padding: 0.7rem 1.4rem;
     font-size: 1rem;
@@ -30,9 +38,14 @@ input , button{
     border: none;
     box-shadow: 2px 2px 5px rgb(237, 119, 119);
 }
+
 input::placeholder {
     font-size: 1.25rem;
     color: #fff;
+}
+
+input:hover {
+    animation: colorShadow 1s infinite alternate;
 }
 
 /*Box around the blocks*/
