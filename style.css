@@ -50,10 +50,13 @@ input:hover {
 
 /*Box around the blocks*/
 .item1, .item2, .box3 {
+    display: flex;
+    flex-direction: column;
     border: 1px solid white;
     border-radius: 32px;
-    padding: 0;
+    padding: 1.5rem;
     padding-bottom: 1rem;
+    padding-top: 0;
     margin: 0.7rem;
     box-shadow: 2px 2px 3px rgb(237, 119, 119);
 }
